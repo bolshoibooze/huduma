@@ -1,0 +1,38 @@
+.pure-table {
+    /* Remove spacing between table cells (from Normalize.css) */
+border-collapse: collapse;border-spacing: 0;border: none;width:100%;
+}
+
+
+.pure-table td,
+.pure-table th {font-size: inherit;margin: 0;overflow: visible;padding: 6px;
+}
+.pure-table td:first-child,
+.pure-table th:first-child {
+    border-left-width: 0;
+}
+
+.pure-table thead {
+    background: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+/*
+striping:
+   even - #fff (white)
+   odd  - #f2f2f2 (light gray)
+*/
+.pure-table td {
+    background-color: transparent;
+}
+.pure-table-odd td {
+    background-color: #f2f2f2;
+}
+
+/* nth-child selector for modern browsers */
+.pure-table-striped tr:nth-child(2n-1) td {
+    background-color: #f2f2f2;
+}
+

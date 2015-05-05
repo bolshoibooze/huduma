@@ -1,0 +1,86 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
+
+
+/* logo styles */ 
+.logo {display: block;font-family:"Lucida Console", Monaco, monospace;font-size: 2.5em;line-height: normal;color:white;margin-top:3%;font-weight:bolder;margin-bottom:2%;text-align:center;border-bottom:1px solid #eee;}
+
+.blacks {color:black;}
+.fire {color:#B22222;}
+.veg {color:green;}
+.peace {text-decoration-color:white;text-decoration:line-through;}
+
+.notification {text-align:center;}
+.topcoat-notification {padding: 0.15em 0.5em 0.2em;border-radius: 2px;color: #fff;
+background-color: #ec514e;}
+
+/* nav */
+.nav {position: relative;margin: 20px 0;text-align:center;}
+
+.nav ul {margin: 0;padding: 0;}
+
+.nav li {margin: 0 5px 10px 0;padding: 0;list-style: none;margin-top:5px;
+display: inline-block;}/*display: inline-block;*/
+
+.nav a {padding: 3px 12px;text-decoration: none;color: #0083ff;
+line-height: 100%; font-size: 1.3em;border-radius:5px;font-family: 'Fenix', serif;}/* color: #ADD8E6;*/
+
+.nav a:hover {border-radius:5px;padding: 4px;border:2px solid #F08080;}
+
+.nav a:visited{color: #7eccd4;}
+
+.nav .current a {border-radius:5px;padding: 4px;border:2px solid #F08080;
+border-radius: 5px;}
+
+/* media queries to accomodate iPad */
+
+@media screen and (max-width: 600px) {
+
+.footer-nav {display:none;}
+.content-area{margin-left:5%;margin-right:5%;color:black;font-size:135%;font-weight:normal;}
+
+.nav {position: relative;min-height: 40px;}
+	
+.nav ul {width: 180px;padding: 5px 0;position: absolute;top: 0;left: 0;
+background: #fff; url(/.../img/png/glyphicons_156_show_thumbnails_with_lines.png) no-repeat 10px 11px;border-radius: 5px;margin-left:1%;}
+
+.nav li {display: none; /* hide all <li> items */margin: 0;}
+
+.nav .current {display: block; /* show only current <li> item */}
+
+.nav a {display: block;padding: 5px 5px 5px 32px;text-align: left;}
+
+.nav .current a {background: none;}
+
+/* on nav hover */
+.nav ul:hover {background-image: none;}
+.nav ul:hover li {display: block;margin: 0 0 5px;}
+.nav ul:hover .current {
+background: url(/static/img/png/glyphicons_157_showlines.png) no-repeat 10px 7px;
+}
+
+/* center nav  */
+.nav.center ul {left: 50%;margin-left: -90px;border-bottom:3px solid #666;}
+
+img {width: 100%;}
+
+
+
+
+/* background img */
+img.bg {min-height: 100%;min-width: 1024px; width: 100%;height: auto;
+position: fixed;top: 0;left: 0;}
+
+@media screen and (max-width: 1024px) { 
+  img.bg {left: 50%;margin-left: -512px;   /* 50% */
+  }
+}
+
+/* tablets */
+@media screen and (max-width: 16px) { 
+  footer-nav {display:none; }  /* 50% */
+  }
+}
+
+

@@ -1,0 +1,53 @@
+
+CACHE MANIFEST
+
+# rev 01
+
+#example
+#no need for listing individual web pages:base templates reference shortcut
+
+#serve this mime-type in Apache, add this line to your config file:
+#------------------------------------------------------------------#
+# AddType text/cache-manifest .appcache
+#------------------------------------------------------------------#
+
+desktop_core.html 
+mobile_core.html 
+
+# desktop 
+http://fonts.googleapis.com/css?family=Fenix
+
+/img/favicon_1.ico 
+/css/support-styles.css
+/css/menu.css
+/css/grid-min.css
+/css/bootstrap.min.css
+
+# mobile
+/css/styles.css
+/img/png/glyphicons_157_show_lines.png
+
+
+
+stylesheet.css
+images/logo.png
+scripts/main.js
+http://cdn.example.com/scripts/main.js
+# end of example
+
+
+
+
+
+
+
+FALLBACK:
+/ /offline.html
+
+
+# Additional resources to cache
+CACHE:
+
+NETWORK:
+*
+
