@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!-- markup for a polygot page: accomodate HTML & XHTML -->
+<html id="CardPesa" xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" manifest="/static/media/site_media/manifest.appcache" class="no-js">
+<head> 
+<link rel="shortcut icon" href="{{MEDIA_URL}}site_media/img/favicon.ico">
+
+			<title> Huduma Center </title>
+        
+        
+        <meta name="description" content="Huduma Center Services at your convenience...">
+        
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui" user-scalable="no">
+        <meta http-equiv="cleartype" content="on">
+    
+         
+    
+<meta name="viewport" 
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+
+
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<link rel="Stylesheet" type="text/css" href="{{MEDIA_URL}}site_media/css/styles.css"/>
+
+
+
+</head>
+   
+ <body>
+
+                         {% block  header %} 
+         <div id="back2top" class="logo blacks"> Huduma Center Online </div> 
+
+                          {% endblock %}
+
+{% block menu %} {% endblock %}
+{% block notifications %}  {% endblock %}
+
+{% block content %}  {% endblock %}
+
+
+
+{% block content1 %}{% endblock %}
+
+
+{% block content2 %}{% endblock %}
+
+
+{% block content3 %}{% endblock %}
+
+
+{% block content4 %}{% endblock %}
+
+
+{% block content5 %}{% endblock %}
+
+ 
+{% block page-footer %}
+
+
+{% endblock %}
+
+{% block js %}
+<!--- load using async:this style is far too old -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
+</script>   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+{% endblock %}
+
+
+</body>
+</html>
+

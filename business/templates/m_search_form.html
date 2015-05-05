@@ -1,0 +1,36 @@
+                       {% extends "mobile_core.html" %}
+		           
+		            {% block menu %}
+		      <div class='top-menu'>
+     <a class="align-left tab tappy" href="{% url  'search' %}">Home</a>
+          <a class="next tappy" href="{% url 'registration' %}">Registration</a>
+         <a class="align-right tappy" href="{% url 'faqs' %}">FAQs</a>
+		      </div>
+		              {% endblock %}
+
+			  
+                           {% block content %}
+                 <div class="alt-title"> Business Name Search </div>
+                
+                         <div class="login  distanced">
+    
+              <form   action="." method="post" >{% csrf_token %}
+
+                       {% if form.non_field_errors %}
+                    <div class="alert alert-error form-errors">
+      			{{ form.non_field_errors }}
+                          </div>
+                              {% endif %}
+                              
+                              
+
+                              <fieldset>
+
+                       {% include "search_base.html" %}
+
+          <input class="button tappy" name="post" value="Search" type="submit"/>
+                             </fieldset>
+                            </form>
+                           
+                           
+                              {% endblock %}

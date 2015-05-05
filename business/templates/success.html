@@ -1,0 +1,36 @@
+                         {% extends "desktop_core.html" %}
+                      
+                              {% block nav %}
+                           <div class="nav center">
+               
+                   <ul>
+	
+	                  <li><a href="{% url 'search' %}">Home</a></li>
+	           <li><a href="{% url 'registration' %}"> Registration</a> </li>
+	                <li><a href="{% url 'faqs' %}">FAQs</a></li>
+	
+	
+                     </ul>
+                  </div>
+                               {% endblock %}
+                               
+                             {% block content %}
+        <div class="simple-title welcome stylish">Successful Registration</div>
+
+                    <div class="narrow-section  spaced">
+           
+                     <div class="paragraph spaced">
+         
+                    <p class="spaced align-center">
+          Your business name has been successfully registered:
+                  </p>
+                  
+            <p class="align-center"> We wish you all the best </p>
+                 
+                 </div>
+                </div>
+
+               </div>
+                             
+                             
+                                {% endblock %}

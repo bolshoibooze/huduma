@@ -1,0 +1,25 @@
+                       {% extends "mobile_core.html" %}
+		           
+		             {% block menu %}
+		      <div class='top-menu'>
+     <a class="align-left tappy" href="{% url  'search' %}">Home</a>
+          <a class="next tappy" href="{% url 'registration' %}">Registration</a>
+         <a class="align-right tappy" href="{% url 'faqs' %}">FAQs</a>
+		      </div>
+		              {% endblock %}
+
+			  
+                           {% block content %}
+                 <div class="title spaced">Successful Registration</div>
+                 
+                            <div class="paragraph spaced">
+          <p class="spaced">Your business name has been successfully registered</p>
+          
+                 <p class="align-center"> We wish you all the best </p>
+                 
+                 </div>
+          
+
+                           
+                           
+                             {% endblock %}

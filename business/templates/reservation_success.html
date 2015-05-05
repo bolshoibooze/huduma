@@ -1,0 +1,38 @@
+                       {% extends "desktop_core.html" %}
+                      
+                              {% block nav %}
+                           <div class="nav center">
+               
+                   <ul>
+	
+	                  <li><a href="{% url 'search' %}">Home</a></li>
+	           <li><a href="{% url 'registration' %}"> Registration</a> </li>
+	                <li><a href="{% url 'faqs' %}">FAQs</a></li>
+	
+	
+                     </ul>
+                  </div>
+                               {% endblock %}
+                               
+                             {% block content %}
+        <div class="simple-title welcome stylish">Successful Reservation</div>
+
+                    <div class="narrow-section  spaced">
+           
+                     <div class="paragraph spaced">
+         
+          <p class="spaced align-center">To enable automated payment of bills:</p>
+          <p>1. Land registration number of your business premises </p>
+                 <p>2. Scanned copy of your I.D card </p>
+                 <p>3. Scanned copy of your KRA PIN Certificate </p>
+                 
+                 </div>
+                </div>
+
+           <div class="paragraph">
+ <a class="subscribe-btn align-center stylish"  href="{% url 'register_name' %}">Register Name</a>
+           </div>
+               </div>
+                             
+                             
+                                {% endblock %}

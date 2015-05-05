@@ -1,0 +1,39 @@
+                      {% extends "desktop_core.html" %}
+                      
+                              {% block nav %}
+                           <div class="nav center">
+               
+                   <ul>
+	
+	          <li class="current"><a href="{% url 'search' %}">Home</a></li>
+	             <li><a href="{% url 'registration' %}"> Registration</a> </li>
+	                <li><a href="{% url 'faqs' %}">FAQs</a></li>
+	
+	
+                     </ul>
+                  </div>
+                               {% endblock %}
+                               
+                             {% block content %}
+                     <div class="simple-title"> Business Name Search </div>
+                
+                  <div class="narrow-section  spaced paragraph">
+    
+              <form   action="." method="post" >{% csrf_token %}
+
+                         <div class="required align-center">
+                         {{ form.non_field_errors }}
+                            </div>
+                            
+                           
+                              <fieldset>
+                      
+                 {% include "search_base.html" %}
+
+        <input type="submit" name="submit" value="Search" id="submit" />
+                               </fieldset>
+                             
+                       </form>
+                   </div>
+                         
+                                {% endblock %}
