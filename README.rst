@@ -12,7 +12,7 @@ problem to solve.
 What if business name search could just be as simple as a Google web search?
 
 I thought about this, and instead of complaining,i've cobbled up this concept
-app to show what is possible.
+app to show what is possible,and wrote a blog post too -- see:https://medium.com/@mwaigaryan/huduma-center-a-kenyan-case-of-bad-design-6a9776654cca
 
 The modular way in which Django apps can be plugged into a project could be
 really useful for the Kenyan government in its bid to centralize all services
